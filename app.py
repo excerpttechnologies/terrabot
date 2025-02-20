@@ -128,7 +128,7 @@ try:
     # Load trained model and data
     logger.info("Loading model and data files...")
     model = load_model('chatbot_model.h5')
-    intents = json.loads(open('intents.json').read())
+    intents = json.loads(open('intents_v1.json').read())
     words = pickle.load(open('words.pkl', 'rb'))
     classes = pickle.load(open('classes.pkl', 'rb'))
     logger.info("Model and data files loaded successfully")
